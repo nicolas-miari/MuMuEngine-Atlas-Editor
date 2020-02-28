@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="FRj-th-ZQw">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14868"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Asset Library View Controller-->
+        <scene sceneID="VOA-DE-nM7">
+            <objects>
+                <viewController id="FRj-th-ZQw" customClass="AssetLibraryViewController" customModule="AtlasEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="2ex-7u-eCy">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="534"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbp-Ru-3dn">
+                                <rect key="frame" x="0.0" y="40" width="480" height="494"/>
+                                <clipView key="contentView" id="nwd-OH-v7N">
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="494"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <collectionView selectable="YES" allowsMultipleSelection="YES" id="OKi-Cf-WpS" customClass="ContextMenuCollectionView" customModule="AtlasEditor" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="480" height="494"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="SiR-cD-79J" customClass="CollectionViewLeftFlowLayout" customModule="AtlasEditor" customModuleProvider="target">
+                                                <size key="itemSize" width="50" height="50"/>
+                                            </collectionViewFlowLayout>
+                                            <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <connections>
+                                                <outlet property="dataSource" destination="FRj-th-ZQw" id="jBj-Vc-NN6"/>
+                                                <outlet property="delegate" destination="FRj-th-ZQw" id="Ab0-N7-lUh"/>
+                                            </connections>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="tFz-FY-uah">
+                                    <rect key="frame" x="-100" y="-100" width="233" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="sME-Y1-vh1">
+                                    <rect key="frame" x="464" y="0.0" width="16" height="434"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button toolTip="Add image files to the asset library" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8dX-1w-Ed2">
+                                <rect key="frame" x="8" y="8" width="21" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="QVq-fZ-22G"/>
+                                    <constraint firstAttribute="width" constant="21" id="yMB-Gd-kUE"/>
+                                </constraints>
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSAddTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="IIc-dt-Qex">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="addItems:" target="FRj-th-ZQw" id="s6O-N4-Oqt"/>
+                                </connections>
+                            </button>
+                            <button toolTip="Remove selected items from the asset library" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Te4-H7-NAr">
+                                <rect key="frame" x="37" y="8" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="SSk-2a-qus"/>
+                                    <constraint firstAttribute="height" constant="21" id="vQ3-rW-yQw"/>
+                                </constraints>
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="NSRemoveTemplate" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="Haq-cq-Sjq">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+CA
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="deleteSelectedItems:" target="FRj-th-ZQw" id="6Kz-Ji-SWf"/>
+                                </connections>
+                            </button>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="FiK-Vo-Z62">
+                                <rect key="frame" x="0.0" y="37" width="480" height="5"/>
+                            </box>
+                            <popUpButton toolTip="Sources are always packed in size-descending order." verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Afg-ui-Ucn">
+                                <rect key="frame" x="337" y="7" width="136" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="mHQ-56-QNI"/>
+                                </constraints>
+                                <popUpButtonCell key="cell" type="push" title="Name" bezelStyle="rounded" alignment="left" controlSize="small" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="rJx-dt-X7U" id="y7M-ja-oH3">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <menu key="menu" id="3g5-f7-tom">
+                                        <items>
+                                            <menuItem title="Name" state="on" id="rJx-dt-X7U"/>
+                                            <menuItem title="Size (Descending)" id="Epv-Aa-4Ev"/>
+                                            <menuItem title="Size (Ascending)" id="cuc-oi-kMY"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="sortCriterionChanged:" target="FRj-th-ZQw" id="9Ct-A2-pJe"/>
+                                </connections>
+                            </popUpButton>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Lxd-4x-kQS">
+                                <rect key="frame" x="292" y="12" width="46" height="14"/>
+                                <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Sort by:" id="bh7-je-Jnt">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Te4-H7-NAr" secondAttribute="bottom" constant="8" id="BTc-UM-QUa"/>
+                            <constraint firstAttribute="trailing" secondItem="FiK-Vo-Z62" secondAttribute="trailing" id="G0M-2h-mqT"/>
+                            <constraint firstAttribute="bottom" secondItem="8dX-1w-Ed2" secondAttribute="bottom" constant="8" id="H9N-Y4-Y6x"/>
+                            <constraint firstItem="Hbp-Ru-3dn" firstAttribute="top" secondItem="2ex-7u-eCy" secondAttribute="top" id="Lvg-ug-hEE"/>
+                            <constraint firstItem="Hbp-Ru-3dn" firstAttribute="leading" secondItem="2ex-7u-eCy" secondAttribute="leading" id="MDV-TH-Cbs"/>
+                            <constraint firstItem="Afg-ui-Ucn" firstAttribute="leading" secondItem="Lxd-4x-kQS" secondAttribute="trailing" constant="4" id="MTs-4m-gSL"/>
+                            <constraint firstAttribute="bottom" secondItem="FiK-Vo-Z62" secondAttribute="bottom" constant="39" id="PgR-Fv-TZM"/>
+                            <constraint firstItem="8dX-1w-Ed2" firstAttribute="top" secondItem="FiK-Vo-Z62" secondAttribute="bottom" constant="9" id="PnH-q1-Ob4"/>
+                            <constraint firstItem="FiK-Vo-Z62" firstAttribute="top" secondItem="Hbp-Ru-3dn" secondAttribute="bottom" id="apK-x1-q1o"/>
+                            <constraint firstItem="8dX-1w-Ed2" firstAttribute="leading" secondItem="2ex-7u-eCy" secondAttribute="leading" constant="8" id="dHb-wK-jRx"/>
+                            <constraint firstItem="FiK-Vo-Z62" firstAttribute="leading" secondItem="2ex-7u-eCy" secondAttribute="leading" id="egJ-8y-ECJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Hbp-Ru-3dn" secondAttribute="trailing" id="nSe-9t-4pn"/>
+                            <constraint firstItem="Te4-H7-NAr" firstAttribute="leading" secondItem="8dX-1w-Ed2" secondAttribute="trailing" constant="8" id="oUu-sT-jOO"/>
+                            <constraint firstAttribute="trailing" secondItem="Afg-ui-Ucn" secondAttribute="trailing" constant="10" id="ou0-Q7-g3N"/>
+                            <constraint firstItem="Afg-ui-Ucn" firstAttribute="centerY" secondItem="Te4-H7-NAr" secondAttribute="centerY" id="roZ-Mb-S3G"/>
+                            <constraint firstItem="Lxd-4x-kQS" firstAttribute="centerY" secondItem="Afg-ui-Ucn" secondAttribute="centerY" id="s83-5z-4DZ"/>
+                            <constraint firstItem="Lxd-4x-kQS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Te4-H7-NAr" secondAttribute="trailing" constant="8" symbolic="YES" id="zvI-6r-Xi4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="8dX-1w-Ed2" id="5yY-r4-I4S"/>
+                        <outlet property="collectionView" destination="OKi-Cf-WpS" id="TLG-lh-mhr"/>
+                        <outlet property="removeButton" destination="Te4-H7-NAr" id="gbh-9T-UO2"/>
+                        <outlet property="sortPopupButton" destination="Afg-ui-Ucn" id="TLR-96-8Zs"/>
+                    </connections>
+                </viewController>
+                <customObject id="RIK-Gv-HhV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+        <image name="NSRemoveTemplate" width="11" height="11"/>
+    </resources>
+</document>

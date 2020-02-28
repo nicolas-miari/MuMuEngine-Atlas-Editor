@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14868"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LibraryCollectionViewItem" customModule="AtlasEditor" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="427"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pwq-tG-cbz">
+                    <rect key="frame" x="0.0" y="30" width="480" height="397"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" id="q4Q-XN-Hyw"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qtN-fg-CDk">
+                    <rect key="frame" x="-2" y="0.0" width="484" height="27"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="center" title="Label" id="ndr-d0-keW">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qtN-fg-CDk" secondAttribute="trailing" id="4nH-uC-CHI"/>
+                <constraint firstItem="qtN-fg-CDk" firstAttribute="top" secondItem="pwq-tG-cbz" secondAttribute="bottom" constant="3" id="Cnq-v6-qQO"/>
+                <constraint firstItem="pwq-tG-cbz" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="Dog-nM-S3e"/>
+                <constraint firstAttribute="trailing" secondItem="pwq-tG-cbz" secondAttribute="trailing" id="Ebm-te-Uz2"/>
+                <constraint firstAttribute="bottom" secondItem="pwq-tG-cbz" secondAttribute="bottom" constant="30" id="Fna-Gd-Y0f"/>
+                <constraint firstAttribute="bottom" secondItem="qtN-fg-CDk" secondAttribute="bottom" id="J1K-a4-oDW"/>
+                <constraint firstItem="pwq-tG-cbz" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="JiH-Oa-LhL"/>
+                <constraint firstItem="pwq-tG-cbz" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="T97-WD-Gzb"/>
+                <constraint firstItem="qtN-fg-CDk" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="VtF-bX-cqg"/>
+            </constraints>
+            <point key="canvasLocation" x="109" y="355.5"/>
+        </customView>
+        <collectionViewItem nibName="LibraryCollectionViewItem" id="hOO-UF-tN1" customClass="LibraryCollectionViewItem" customModule="AtlasEditor" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="pwq-tG-cbz" id="CAS-53-GHX"/>
+                <outlet property="textField" destination="qtN-fg-CDk" id="jJH-CD-dS6"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="1yg-fC-3Ix"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+</document>

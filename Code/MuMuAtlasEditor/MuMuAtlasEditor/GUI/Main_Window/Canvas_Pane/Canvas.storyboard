@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="dUS-CO-zNT">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Canvas View Controller-->
+        <scene sceneID="9HY-89-gAD">
+            <objects>
+                <viewController id="dUS-CO-zNT" customClass="CanvasViewController" customModule="AtlasEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="de5-n7-8HO">
+                        <rect key="frame" x="0.0" y="0.0" width="512" height="532"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="wIL-c7-QSt">
+                                <rect key="frame" x="0.0" y="0.0" width="512" height="39"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jRx-jN-3hl">
+                                        <rect key="frame" x="6" y="13" width="38" height="14"/>
+                                        <textFieldCell key="cell" controlSize="small" lineBreakMode="clipping" title="Zoom:" id="59H-lz-Fum">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iNN-16-nZJ">
+                                        <rect key="frame" x="46" y="7" width="59" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="Fgl-k7-pVW"/>
+                                        </constraints>
+                                        <comboBoxCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="ayo-F5-VCx">
+                                            <font key="font" metaFont="smallSystem"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <objectValues>
+                                                <string>25%</string>
+                                                <string>50%</string>
+                                                <string>75%</string>
+                                                <string>100%</string>
+                                                <string>125%</string>
+                                                <string>150%</string>
+                                                <string>200%</string>
+                                                <string>300%</string>
+                                                <string>400%</string>
+                                            </objectValues>
+                                        </comboBoxCell>
+                                        <connections>
+                                            <action selector="zoomChanged:" target="dUS-CO-zNT" id="pTo-Lq-ig3"/>
+                                        </connections>
+                                    </comboBox>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dxG-gc-31n">
+                                        <rect key="frame" x="123" y="11" width="98" height="18"/>
+                                        <buttonCell key="cell" type="check" title="Show Outlines" bezelStyle="regularSquare" imagePosition="left" controlSize="small" state="on" inset="2" id="XXV-3x-mO3">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="smallSystem"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="outlineCheckboxChanged:" target="9yu-L4-O4t" id="UO4-xI-Bmb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dxG-gc-31n" firstAttribute="centerY" secondItem="wIL-c7-QSt" secondAttribute="centerY" id="1Gb-FE-gUY"/>
+                                    <constraint firstItem="jRx-jN-3hl" firstAttribute="leading" secondItem="wIL-c7-QSt" secondAttribute="leading" constant="8" id="7nf-Sv-dNx"/>
+                                    <constraint firstItem="jRx-jN-3hl" firstAttribute="centerY" secondItem="wIL-c7-QSt" secondAttribute="centerY" id="GUX-2f-eYX"/>
+                                    <constraint firstItem="iNN-16-nZJ" firstAttribute="centerY" secondItem="wIL-c7-QSt" secondAttribute="centerY" id="Hf0-AL-8dw"/>
+                                    <constraint firstItem="dxG-gc-31n" firstAttribute="leading" secondItem="iNN-16-nZJ" secondAttribute="trailing" constant="24" id="JjS-fF-fUM"/>
+                                    <constraint firstItem="iNN-16-nZJ" firstAttribute="leading" secondItem="jRx-jN-3hl" secondAttribute="trailing" constant="4" id="LCW-Ua-mYf"/>
+                                    <constraint firstAttribute="height" constant="39" id="XZY-rA-miC"/>
+                                </constraints>
+                            </customView>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyu-e4-Pmr">
+                                <rect key="frame" x="0.0" y="40" width="512" height="492"/>
+                                <clipView key="contentView" id="Cdv-2V-EuK" customClass="CenteredClipView" customModule="AtlasEditor" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="512" height="492"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Chc-gR-fDP">
+                                            <rect key="frame" x="0.0" y="0.0" width="497" height="477"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="8Cm-E7-q7P">
+                                    <rect key="frame" x="0.0" y="477" width="497" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="WAV-vZ-wLy">
+                                    <rect key="frame" x="497" y="0.0" width="15" height="477"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="vWG-Yx-ZTw">
+                                <rect key="frame" x="0.0" y="37" width="512" height="5"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="vWG-Yx-ZTw" firstAttribute="leading" secondItem="de5-n7-8HO" secondAttribute="leading" id="028-ld-vOe"/>
+                            <constraint firstAttribute="bottom" secondItem="wIL-c7-QSt" secondAttribute="bottom" id="1hb-eE-v7G"/>
+                            <constraint firstItem="Eyu-e4-Pmr" firstAttribute="top" secondItem="de5-n7-8HO" secondAttribute="top" id="7Xv-wq-68v"/>
+                            <constraint firstAttribute="trailing" secondItem="vWG-Yx-ZTw" secondAttribute="trailing" id="Pzi-0v-94t"/>
+                            <constraint firstItem="vWG-Yx-ZTw" firstAttribute="top" secondItem="Eyu-e4-Pmr" secondAttribute="bottom" id="XYK-u2-qrY"/>
+                            <constraint firstItem="wIL-c7-QSt" firstAttribute="leading" secondItem="de5-n7-8HO" secondAttribute="leading" id="akA-Ry-GnE"/>
+                            <constraint firstItem="Eyu-e4-Pmr" firstAttribute="leading" secondItem="de5-n7-8HO" secondAttribute="leading" id="kBI-g2-Qcd"/>
+                            <constraint firstAttribute="trailing" secondItem="wIL-c7-QSt" secondAttribute="trailing" id="mxR-IG-0is"/>
+                            <constraint firstAttribute="trailing" secondItem="Eyu-e4-Pmr" secondAttribute="trailing" id="ryf-dR-yxD"/>
+                            <constraint firstItem="wIL-c7-QSt" firstAttribute="top" secondItem="vWG-Yx-ZTw" secondAttribute="bottom" id="vge-Ep-hSk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="outlinesCheckbox" destination="dxG-gc-31n" id="HDi-tA-E8f"/>
+                        <outlet property="scrollView" destination="Eyu-e4-Pmr" id="LVE-2a-Ifz"/>
+                        <outlet property="zoomComboBox" destination="iNN-16-nZJ" id="K9n-TQ-uz0"/>
+                    </connections>
+                </viewController>
+                <customObject id="9yu-L4-O4t" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131" y="111"/>
+        </scene>
+    </scenes>
+</document>

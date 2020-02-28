@@ -1,0 +1,1255 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F5C760D2408AE100010546F /* Document.icns in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75BA2408AE100010546F /* Document.icns */; };
+		1F5C760E2408AE100010546F /* 00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75BC2408AE100010546F /* 00@2x.png */; };
+		1F5C760F2408AE100010546F /* 02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75BD2408AE100010546F /* 02@2x.png */; };
+		1F5C76102408AE100010546F /* 06@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75BF2408AE100010546F /* 06@2x.png */; };
+		1F5C76112408AE100010546F /* 07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75C02408AE100010546F /* 07@2x.png */; };
+		1F5C76122408AE100010546F /* 04@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75C12408AE100010546F /* 04@2x.png */; };
+		1F5C76132408AE100010546F /* 01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75C22408AE100010546F /* 01@2x.png */; };
+		1F5C76142408AE100010546F /* 03@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75C32408AE100010546F /* 03@2x.png */; };
+		1F5C76152408AE100010546F /* 08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75C52408AE100010546F /* 08@2x.png */; };
+		1F5C76162408AE100010546F /* 09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75C62408AE100010546F /* 09@2x.png */; };
+		1F5C76172408AE100010546F /* 05@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75C72408AE100010546F /* 05@2x.png */; };
+		1F5C76182408AE100010546F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75C82408AE100010546F /* Assets.xcassets */; };
+		1F5C76192408AE100010546F /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75CA2408AE100010546F /* Source.swift */; };
+		1F5C761A2408AE100010546F /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75CB2408AE100010546F /* Mesh.swift */; };
+		1F5C761B2408AE100010546F /* Sprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75CC2408AE100010546F /* Sprite.swift */; };
+		1F5C761C2408AE100010546F /* ProjectDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75CE2408AE100010546F /* ProjectDescriptor.swift */; };
+		1F5C761D2408AE100010546F /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75CF2408AE100010546F /* Document.swift */; };
+		1F5C761E2408AE100010546F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75D12408AE100010546F /* Main.storyboard */; };
+		1F5C761F2408AE100010546F /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75D42408AE100010546F /* Notification+Extensions.swift */; };
+		1F5C76202408AE100010546F /* NSError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75D52408AE100010546F /* NSError+Extensions.swift */; };
+		1F5C76212408AE100010546F /* CGGeometry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75D62408AE100010546F /* CGGeometry+Extensions.swift */; };
+		1F5C76222408AE100010546F /* CGImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75D72408AE100010546F /* CGImage+Extensions.swift */; };
+		1F5C76232408AE100010546F /* CGColorSpace+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75D82408AE100010546F /* CGColorSpace+Extensions.swift */; };
+		1F5C76242408AE100010546F /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75D92408AE100010546F /* CGFloat+Extensions.swift */; };
+		1F5C76252408AE100010546F /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75DC2408AE100010546F /* MainMenu.storyboard */; };
+		1F5C76262408AE100010546F /* TestDataOptions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75DF2408AE100010546F /* TestDataOptions.storyboard */; };
+		1F5C76272408AE100010546F /* TestDataOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75E02408AE100010546F /* TestDataOptionsViewController.swift */; };
+		1F5C76282408AE100010546F /* Export.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75E22408AE100010546F /* Export.storyboard */; };
+		1F5C76292408AE100010546F /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75E32408AE100010546F /* ExportViewController.swift */; };
+		1F5C762A2408AE100010546F /* Preferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75E52408AE100010546F /* Preferences.storyboard */; };
+		1F5C762B2408AE100010546F /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75E62408AE100010546F /* Preferences.swift */; };
+		1F5C762C2408AE100010546F /* CenteredClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75E82408AE100010546F /* CenteredClipView.swift */; };
+		1F5C762D2408AE100010546F /* LinkedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75E92408AE100010546F /* LinkedTextField.swift */; };
+		1F5C762E2408AE100010546F /* CollectionViewLeftFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75EA2408AE100010546F /* CollectionViewLeftFlowLayout.swift */; };
+		1F5C762F2408AE100010546F /* ContextMenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75EB2408AE100010546F /* ContextMenuCollectionView.swift */; };
+		1F5C76302408AE100010546F /* ResizeCanvas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75ED2408AE100010546F /* ResizeCanvas.storyboard */; };
+		1F5C76312408AE100010546F /* ResizeCanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75EE2408AE100010546F /* ResizeCanvasViewController.swift */; };
+		1F5C76322408AE100010546F /* AnchorPointEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75F02408AE100010546F /* AnchorPointEditor.storyboard */; };
+		1F5C76332408AE100010546F /* AnchorPointEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75F12408AE100010546F /* AnchorPointEditorViewController.swift */; };
+		1F5C76342408AE100010546F /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75F32408AE100010546F /* MainWindowController.swift */; };
+		1F5C76352408AE100010546F /* AssetLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75F52408AE100010546F /* AssetLibrary.storyboard */; };
+		1F5C76362408AE100010546F /* SourceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75F72408AE100010546F /* SourceInfoViewController.swift */; };
+		1F5C76372408AE100010546F /* SourceInfoWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75F82408AE100010546F /* SourceInfoWindowController.swift */; };
+		1F5C76382408AE100010546F /* SourceInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75F92408AE100010546F /* SourceInfo.storyboard */; };
+		1F5C76392408AE100010546F /* LibraryCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75FB2408AE100010546F /* LibraryCollectionViewItem.swift */; };
+		1F5C763A2408AE100010546F /* LibraryCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75FC2408AE100010546F /* LibraryCollectionViewItem.xib */; };
+		1F5C763B2408AE100010546F /* AssetLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C75FD2408AE100010546F /* AssetLibraryViewController.swift */; };
+		1F5C763C2408AE100010546F /* MainWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C75FE2408AE100010546F /* MainWindow.storyboard */; };
+		1F5C763D2408AE100010546F /* MainSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76002408AE100010546F /* MainSplitViewController.swift */; };
+		1F5C763E2408AE100010546F /* Canvas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C76022408AE100010546F /* Canvas.storyboard */; };
+		1F5C763F2408AE100010546F /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76032408AE100010546F /* CanvasViewController.swift */; };
+		1F5C76402408AE100010546F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76042408AE100010546F /* AppDelegate.swift */; };
+		1F5C76422408AE100010546F /* FileSystemAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76072408AE100010546F /* FileSystemAccess.swift */; };
+		1F5C76432408AE100010546F /* Rendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76082408AE100010546F /* Rendering.swift */; };
+		1F5C76442408AE100010546F /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76092408AE100010546F /* AppConfiguration.swift */; };
+		1F5C76452408AE100010546F /* TestDataExporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C760A2408AE100010546F /* TestDataExporting.swift */; };
+		1F5C76462408AE100010546F /* Packing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C760B2408AE100010546F /* Packing.swift */; };
+		1F5C76472408AE100010546F /* Exporting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C760C2408AE100010546F /* Exporting.swift */; };
+		1F5C766A2408AF930010546F /* ExportingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76672408AF930010546F /* ExportingTests.swift */; };
+		1F5C766B2408AF930010546F /* CGGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76682408AF930010546F /* CGGeometryTests.swift */; };
+		1F5C766C2408AF930010546F /* CGColorSpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76692408AF930010546F /* CGColorSpaceTests.swift */; };
+		1F5C767D2408AFC20010546F /* RendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C766D2408AFC10010546F /* RendererTests.swift */; };
+		1F5C767E2408AFC20010546F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C766E2408AFC20010546F /* Media.xcassets */; };
+		1F5C767F2408AFC20010546F /* PackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C766F2408AFC20010546F /* PackingTests.swift */; };
+		1F5C76802408AFC20010546F /* ScaleFactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76702408AFC20010546F /* ScaleFactorTests.swift */; };
+		1F5C76812408AFC20010546F /* test_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C76722408AFC20010546F /* test_01.png */; };
+		1F5C76822408AFC20010546F /* test_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C76732408AFC20010546F /* test_04.png */; };
+		1F5C76832408AFC20010546F /* malformed@x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C76742408AFC20010546F /* malformed@x.png */; };
+		1F5C76842408AFC20010546F /* test_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C76752408AFC20010546F /* test_02@2x.png */; };
+		1F5C76852408AFC20010546F /* Test4x4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C76762408AFC20010546F /* Test4x4.png */; };
+		1F5C76862408AFC20010546F /* not_an_image.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F5C76772408AFC20010546F /* not_an_image.txt */; };
+		1F5C76872408AFC20010546F /* ProjectDescriptorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76782408AFC20010546F /* ProjectDescriptorTests.swift */; };
+		1F5C76882408AFC20010546F /* NSErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C76792408AFC20010546F /* NSErrorTests.swift */; };
+		1F5C76892408AFC20010546F /* SpriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C767A2408AFC20010546F /* SpriteTests.swift */; };
+		1F5C768A2408AFC20010546F /* SourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C767B2408AFC20010546F /* SourceTests.swift */; };
+		1F5C768B2408AFC20010546F /* TestDataGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C767C2408AFC20010546F /* TestDataGeneratorTests.swift */; };
+		1F5C768E2408B0290010546F /* MuMuAtlasEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C768C2408B0290010546F /* MuMuAtlasEditorUITests.swift */; };
+		1F5C768F2408B0290010546F /* GenerateTestImageDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C768D2408B0290010546F /* GenerateTestImageDataTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F5C76522408AEF00010546F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEB3F4D2239E0CF00298681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FEB3F542239E0CF00298681;
+			remoteInfo = MuMuAtlasEditor;
+		};
+		1F5C76612408AEFB0010546F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEB3F4D2239E0CF00298681 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FEB3F542239E0CF00298681;
+			remoteInfo = MuMuAtlasEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F5C75BA2408AE100010546F /* Document.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Document.icns; sourceTree = "<group>"; };
+		1F5C75BC2408AE100010546F /* 00@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "00@2x.png"; sourceTree = "<group>"; };
+		1F5C75BD2408AE100010546F /* 02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02@2x.png"; sourceTree = "<group>"; };
+		1F5C75BF2408AE100010546F /* 06@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "06@2x.png"; sourceTree = "<group>"; };
+		1F5C75C02408AE100010546F /* 07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07@2x.png"; sourceTree = "<group>"; };
+		1F5C75C12408AE100010546F /* 04@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04@2x.png"; sourceTree = "<group>"; };
+		1F5C75C22408AE100010546F /* 01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01@2x.png"; sourceTree = "<group>"; };
+		1F5C75C32408AE100010546F /* 03@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03@2x.png"; sourceTree = "<group>"; };
+		1F5C75C52408AE100010546F /* 08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "08@2x.png"; sourceTree = "<group>"; };
+		1F5C75C62408AE100010546F /* 09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09@2x.png"; sourceTree = "<group>"; };
+		1F5C75C72408AE100010546F /* 05@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "05@2x.png"; sourceTree = "<group>"; };
+		1F5C75C82408AE100010546F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F5C75CA2408AE100010546F /* Source.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		1F5C75CB2408AE100010546F /* Mesh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		1F5C75CC2408AE100010546F /* Sprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprite.swift; sourceTree = "<group>"; };
+		1F5C75CE2408AE100010546F /* ProjectDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDescriptor.swift; sourceTree = "<group>"; };
+		1F5C75CF2408AE100010546F /* Document.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		1F5C75D22408AE100010546F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F5C75D42408AE100010546F /* Notification+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
+		1F5C75D52408AE100010546F /* NSError+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Extensions.swift"; sourceTree = "<group>"; };
+		1F5C75D62408AE100010546F /* CGGeometry+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGGeometry+Extensions.swift"; sourceTree = "<group>"; };
+		1F5C75D72408AE100010546F /* CGImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+Extensions.swift"; sourceTree = "<group>"; };
+		1F5C75D82408AE100010546F /* CGColorSpace+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGColorSpace+Extensions.swift"; sourceTree = "<group>"; };
+		1F5C75D92408AE100010546F /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		1F5C75DD2408AE100010546F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMenu.storyboard; sourceTree = "<group>"; };
+		1F5C75DF2408AE100010546F /* TestDataOptions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestDataOptions.storyboard; sourceTree = "<group>"; };
+		1F5C75E02408AE100010546F /* TestDataOptionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataOptionsViewController.swift; sourceTree = "<group>"; };
+		1F5C75E22408AE100010546F /* Export.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Export.storyboard; sourceTree = "<group>"; };
+		1F5C75E32408AE100010546F /* ExportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
+		1F5C75E52408AE100010546F /* Preferences.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Preferences.storyboard; sourceTree = "<group>"; };
+		1F5C75E62408AE100010546F /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		1F5C75E82408AE100010546F /* CenteredClipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenteredClipView.swift; sourceTree = "<group>"; };
+		1F5C75E92408AE100010546F /* LinkedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedTextField.swift; sourceTree = "<group>"; };
+		1F5C75EA2408AE100010546F /* CollectionViewLeftFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewLeftFlowLayout.swift; sourceTree = "<group>"; };
+		1F5C75EB2408AE100010546F /* ContextMenuCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextMenuCollectionView.swift; sourceTree = "<group>"; };
+		1F5C75ED2408AE100010546F /* ResizeCanvas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ResizeCanvas.storyboard; sourceTree = "<group>"; };
+		1F5C75EE2408AE100010546F /* ResizeCanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResizeCanvasViewController.swift; sourceTree = "<group>"; };
+		1F5C75F02408AE100010546F /* AnchorPointEditor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AnchorPointEditor.storyboard; sourceTree = "<group>"; };
+		1F5C75F12408AE100010546F /* AnchorPointEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorPointEditorViewController.swift; sourceTree = "<group>"; };
+		1F5C75F32408AE100010546F /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		1F5C75F52408AE100010546F /* AssetLibrary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AssetLibrary.storyboard; sourceTree = "<group>"; };
+		1F5C75F72408AE100010546F /* SourceInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceInfoViewController.swift; sourceTree = "<group>"; };
+		1F5C75F82408AE100010546F /* SourceInfoWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceInfoWindowController.swift; sourceTree = "<group>"; };
+		1F5C75F92408AE100010546F /* SourceInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SourceInfo.storyboard; sourceTree = "<group>"; };
+		1F5C75FB2408AE100010546F /* LibraryCollectionViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryCollectionViewItem.swift; sourceTree = "<group>"; };
+		1F5C75FC2408AE100010546F /* LibraryCollectionViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LibraryCollectionViewItem.xib; sourceTree = "<group>"; };
+		1F5C75FD2408AE100010546F /* AssetLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetLibraryViewController.swift; sourceTree = "<group>"; };
+		1F5C75FF2408AE100010546F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainWindow.storyboard; sourceTree = "<group>"; };
+		1F5C76002408AE100010546F /* MainSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSplitViewController.swift; sourceTree = "<group>"; };
+		1F5C76022408AE100010546F /* Canvas.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Canvas.storyboard; sourceTree = "<group>"; };
+		1F5C76032408AE100010546F /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
+		1F5C76042408AE100010546F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F5C76052408AE100010546F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5C76072408AE100010546F /* FileSystemAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystemAccess.swift; sourceTree = "<group>"; };
+		1F5C76082408AE100010546F /* Rendering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rendering.swift; sourceTree = "<group>"; };
+		1F5C76092408AE100010546F /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		1F5C760A2408AE100010546F /* TestDataExporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataExporting.swift; sourceTree = "<group>"; };
+		1F5C760B2408AE100010546F /* Packing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packing.swift; sourceTree = "<group>"; };
+		1F5C760C2408AE100010546F /* Exporting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exporting.swift; sourceTree = "<group>"; };
+		1F5C76482408AE920010546F /* MuMuAtlasEditor.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MuMuAtlasEditor.entitlements; sourceTree = "<group>"; };
+		1F5C764D2408AEF00010546F /* MuMuAtlasEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuMuAtlasEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5C76512408AEF00010546F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5C765C2408AEFB0010546F /* MuMuAtlasEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuMuAtlasEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F5C76602408AEFB0010546F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5C76672408AF930010546F /* ExportingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportingTests.swift; sourceTree = "<group>"; };
+		1F5C76682408AF930010546F /* CGGeometryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGGeometryTests.swift; sourceTree = "<group>"; };
+		1F5C76692408AF930010546F /* CGColorSpaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGColorSpaceTests.swift; sourceTree = "<group>"; };
+		1F5C766D2408AFC10010546F /* RendererTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RendererTests.swift; sourceTree = "<group>"; };
+		1F5C766E2408AFC20010546F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		1F5C766F2408AFC20010546F /* PackingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackingTests.swift; sourceTree = "<group>"; };
+		1F5C76702408AFC20010546F /* ScaleFactorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleFactorTests.swift; sourceTree = "<group>"; };
+		1F5C76722408AFC20010546F /* test_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_01.png; sourceTree = "<group>"; };
+		1F5C76732408AFC20010546F /* test_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_04.png; sourceTree = "<group>"; };
+		1F5C76742408AFC20010546F /* malformed@x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "malformed@x.png"; sourceTree = "<group>"; };
+		1F5C76752408AFC20010546F /* test_02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test_02@2x.png"; sourceTree = "<group>"; };
+		1F5C76762408AFC20010546F /* Test4x4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Test4x4.png; sourceTree = "<group>"; };
+		1F5C76772408AFC20010546F /* not_an_image.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = not_an_image.txt; sourceTree = "<group>"; };
+		1F5C76782408AFC20010546F /* ProjectDescriptorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDescriptorTests.swift; sourceTree = "<group>"; };
+		1F5C76792408AFC20010546F /* NSErrorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSErrorTests.swift; sourceTree = "<group>"; };
+		1F5C767A2408AFC20010546F /* SpriteTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteTests.swift; sourceTree = "<group>"; };
+		1F5C767B2408AFC20010546F /* SourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SourceTests.swift; sourceTree = "<group>"; };
+		1F5C767C2408AFC20010546F /* TestDataGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataGeneratorTests.swift; sourceTree = "<group>"; };
+		1F5C768C2408B0290010546F /* MuMuAtlasEditorUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuMuAtlasEditorUITests.swift; sourceTree = "<group>"; };
+		1F5C768D2408B0290010546F /* GenerateTestImageDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateTestImageDataTests.swift; sourceTree = "<group>"; };
+		1FEB3F552239E0CF00298681 /* MuMuAtlasEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuMuAtlasEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F5C764A2408AEF00010546F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5C76592408AEFB0010546F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEB3F522239E0CF00298681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F5C75B72408AE100010546F /* MuMuAtlasEditor */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C76482408AE920010546F /* MuMuAtlasEditor.entitlements */,
+				1F5C76042408AE100010546F /* AppDelegate.swift */,
+				1F5C76052408AE100010546F /* Info.plist */,
+				1F5C75C92408AE100010546F /* Models */,
+				1F5C75CD2408AE100010546F /* Document */,
+				1F5C75DA2408AE100010546F /* GUI */,
+				1F5C76062408AE100010546F /* Services */,
+				1F5C75D32408AE100010546F /* Extensions */,
+				1F5C75B82408AE100010546F /* Resources */,
+				1F5C75D12408AE100010546F /* Main.storyboard */,
+			);
+			path = MuMuAtlasEditor;
+			sourceTree = "<group>";
+		};
+		1F5C75B82408AE100010546F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75B92408AE100010546F /* Uncatalogued_Resources */,
+				1F5C75C82408AE100010546F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F5C75B92408AE100010546F /* Uncatalogued_Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75BA2408AE100010546F /* Document.icns */,
+				1F5C75BB2408AE100010546F /* UI_Test_Input_Data */,
+			);
+			path = Uncatalogued_Resources;
+			sourceTree = "<group>";
+		};
+		1F5C75BB2408AE100010546F /* UI_Test_Input_Data */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75BC2408AE100010546F /* 00@2x.png */,
+				1F5C75BD2408AE100010546F /* 02@2x.png */,
+				1F5C75BE2408AE100010546F /* Folder_2 */,
+				1F5C75C12408AE100010546F /* 04@2x.png */,
+				1F5C75C22408AE100010546F /* 01@2x.png */,
+				1F5C75C32408AE100010546F /* 03@2x.png */,
+				1F5C75C42408AE100010546F /* Folder_1 */,
+				1F5C75C72408AE100010546F /* 05@2x.png */,
+			);
+			path = UI_Test_Input_Data;
+			sourceTree = "<group>";
+		};
+		1F5C75BE2408AE100010546F /* Folder_2 */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75BF2408AE100010546F /* 06@2x.png */,
+				1F5C75C02408AE100010546F /* 07@2x.png */,
+			);
+			path = Folder_2;
+			sourceTree = "<group>";
+		};
+		1F5C75C42408AE100010546F /* Folder_1 */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75C52408AE100010546F /* 08@2x.png */,
+				1F5C75C62408AE100010546F /* 09@2x.png */,
+			);
+			path = Folder_1;
+			sourceTree = "<group>";
+		};
+		1F5C75C92408AE100010546F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75CA2408AE100010546F /* Source.swift */,
+				1F5C75CB2408AE100010546F /* Mesh.swift */,
+				1F5C75CC2408AE100010546F /* Sprite.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F5C75CD2408AE100010546F /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75CE2408AE100010546F /* ProjectDescriptor.swift */,
+				1F5C75CF2408AE100010546F /* Document.swift */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		1F5C75D32408AE100010546F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75D42408AE100010546F /* Notification+Extensions.swift */,
+				1F5C75D52408AE100010546F /* NSError+Extensions.swift */,
+				1F5C75D62408AE100010546F /* CGGeometry+Extensions.swift */,
+				1F5C75D72408AE100010546F /* CGImage+Extensions.swift */,
+				1F5C75D82408AE100010546F /* CGColorSpace+Extensions.swift */,
+				1F5C75D92408AE100010546F /* CGFloat+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1F5C75DA2408AE100010546F /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75DB2408AE100010546F /* Main_Menu */,
+				1F5C75DE2408AE100010546F /* Test_Data_Generator */,
+				1F5C75E12408AE100010546F /* Export_Panel */,
+				1F5C75E42408AE100010546F /* Preferences_Panel */,
+				1F5C75E72408AE100010546F /* Custom_Views */,
+				1F5C75EC2408AE100010546F /* Resize_Canvas */,
+				1F5C75EF2408AE100010546F /* Edit_Anchor_Point */,
+				1F5C75F22408AE100010546F /* Main_Window */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		1F5C75DB2408AE100010546F /* Main_Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75DC2408AE100010546F /* MainMenu.storyboard */,
+			);
+			path = Main_Menu;
+			sourceTree = "<group>";
+		};
+		1F5C75DE2408AE100010546F /* Test_Data_Generator */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75DF2408AE100010546F /* TestDataOptions.storyboard */,
+				1F5C75E02408AE100010546F /* TestDataOptionsViewController.swift */,
+			);
+			path = Test_Data_Generator;
+			sourceTree = "<group>";
+		};
+		1F5C75E12408AE100010546F /* Export_Panel */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75E22408AE100010546F /* Export.storyboard */,
+				1F5C75E32408AE100010546F /* ExportViewController.swift */,
+			);
+			path = Export_Panel;
+			sourceTree = "<group>";
+		};
+		1F5C75E42408AE100010546F /* Preferences_Panel */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75E52408AE100010546F /* Preferences.storyboard */,
+				1F5C75E62408AE100010546F /* Preferences.swift */,
+			);
+			path = Preferences_Panel;
+			sourceTree = "<group>";
+		};
+		1F5C75E72408AE100010546F /* Custom_Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75E82408AE100010546F /* CenteredClipView.swift */,
+				1F5C75E92408AE100010546F /* LinkedTextField.swift */,
+				1F5C75EA2408AE100010546F /* CollectionViewLeftFlowLayout.swift */,
+				1F5C75EB2408AE100010546F /* ContextMenuCollectionView.swift */,
+			);
+			path = Custom_Views;
+			sourceTree = "<group>";
+		};
+		1F5C75EC2408AE100010546F /* Resize_Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75ED2408AE100010546F /* ResizeCanvas.storyboard */,
+				1F5C75EE2408AE100010546F /* ResizeCanvasViewController.swift */,
+			);
+			path = Resize_Canvas;
+			sourceTree = "<group>";
+		};
+		1F5C75EF2408AE100010546F /* Edit_Anchor_Point */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75F02408AE100010546F /* AnchorPointEditor.storyboard */,
+				1F5C75F12408AE100010546F /* AnchorPointEditorViewController.swift */,
+			);
+			path = Edit_Anchor_Point;
+			sourceTree = "<group>";
+		};
+		1F5C75F22408AE100010546F /* Main_Window */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75F32408AE100010546F /* MainWindowController.swift */,
+				1F5C75F42408AE100010546F /* Library_Pane */,
+				1F5C75FE2408AE100010546F /* MainWindow.storyboard */,
+				1F5C76002408AE100010546F /* MainSplitViewController.swift */,
+				1F5C76012408AE100010546F /* Canvas_Pane */,
+			);
+			path = Main_Window;
+			sourceTree = "<group>";
+		};
+		1F5C75F42408AE100010546F /* Library_Pane */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75F52408AE100010546F /* AssetLibrary.storyboard */,
+				1F5C75F62408AE100010546F /* Source_Info */,
+				1F5C75FA2408AE100010546F /* Collection_View_Item */,
+				1F5C75FD2408AE100010546F /* AssetLibraryViewController.swift */,
+			);
+			path = Library_Pane;
+			sourceTree = "<group>";
+		};
+		1F5C75F62408AE100010546F /* Source_Info */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75F72408AE100010546F /* SourceInfoViewController.swift */,
+				1F5C75F82408AE100010546F /* SourceInfoWindowController.swift */,
+				1F5C75F92408AE100010546F /* SourceInfo.storyboard */,
+			);
+			path = Source_Info;
+			sourceTree = "<group>";
+		};
+		1F5C75FA2408AE100010546F /* Collection_View_Item */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C75FB2408AE100010546F /* LibraryCollectionViewItem.swift */,
+				1F5C75FC2408AE100010546F /* LibraryCollectionViewItem.xib */,
+			);
+			path = Collection_View_Item;
+			sourceTree = "<group>";
+		};
+		1F5C76012408AE100010546F /* Canvas_Pane */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C76022408AE100010546F /* Canvas.storyboard */,
+				1F5C76032408AE100010546F /* CanvasViewController.swift */,
+			);
+			path = Canvas_Pane;
+			sourceTree = "<group>";
+		};
+		1F5C76062408AE100010546F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C76072408AE100010546F /* FileSystemAccess.swift */,
+				1F5C76082408AE100010546F /* Rendering.swift */,
+				1F5C76092408AE100010546F /* AppConfiguration.swift */,
+				1F5C760A2408AE100010546F /* TestDataExporting.swift */,
+				1F5C760B2408AE100010546F /* Packing.swift */,
+				1F5C760C2408AE100010546F /* Exporting.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1F5C764E2408AEF00010546F /* MuMuAtlasEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C76512408AEF00010546F /* Info.plist */,
+				1F5C76692408AF930010546F /* CGColorSpaceTests.swift */,
+				1F5C76682408AF930010546F /* CGGeometryTests.swift */,
+				1F5C76672408AF930010546F /* ExportingTests.swift */,
+				1F5C76792408AFC20010546F /* NSErrorTests.swift */,
+				1F5C766F2408AFC20010546F /* PackingTests.swift */,
+				1F5C76782408AFC20010546F /* ProjectDescriptorTests.swift */,
+				1F5C766D2408AFC10010546F /* RendererTests.swift */,
+				1F5C76702408AFC20010546F /* ScaleFactorTests.swift */,
+				1F5C767B2408AFC20010546F /* SourceTests.swift */,
+				1F5C767A2408AFC20010546F /* SpriteTests.swift */,
+				1F5C767C2408AFC20010546F /* TestDataGeneratorTests.swift */,
+				1F5C766E2408AFC20010546F /* Media.xcassets */,
+				1F5C76712408AFC20010546F /* Test_Image_Data */,
+			);
+			path = MuMuAtlasEditorTests;
+			sourceTree = "<group>";
+		};
+		1F5C765D2408AEFB0010546F /* MuMuAtlasEditorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C768C2408B0290010546F /* MuMuAtlasEditorUITests.swift */,
+				1F5C768D2408B0290010546F /* GenerateTestImageDataTests.swift */,
+				1F5C76602408AEFB0010546F /* Info.plist */,
+			);
+			path = MuMuAtlasEditorUITests;
+			sourceTree = "<group>";
+		};
+		1F5C76712408AFC20010546F /* Test_Image_Data */ = {
+			isa = PBXGroup;
+			children = (
+				1F5C76722408AFC20010546F /* test_01.png */,
+				1F5C76732408AFC20010546F /* test_04.png */,
+				1F5C76742408AFC20010546F /* malformed@x.png */,
+				1F5C76752408AFC20010546F /* test_02@2x.png */,
+				1F5C76762408AFC20010546F /* Test4x4.png */,
+				1F5C76772408AFC20010546F /* not_an_image.txt */,
+			);
+			path = Test_Image_Data;
+			sourceTree = "<group>";
+		};
+		1FEB3F4C2239E0CF00298681 = {
+			isa = PBXGroup;
+			children = (
+				1F5C75B72408AE100010546F /* MuMuAtlasEditor */,
+				1F5C764E2408AEF00010546F /* MuMuAtlasEditorTests */,
+				1F5C765D2408AEFB0010546F /* MuMuAtlasEditorUITests */,
+				1FEB3F562239E0CF00298681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FEB3F562239E0CF00298681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FEB3F552239E0CF00298681 /* MuMuAtlasEditor.app */,
+				1F5C764D2408AEF00010546F /* MuMuAtlasEditorTests.xctest */,
+				1F5C765C2408AEFB0010546F /* MuMuAtlasEditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F5C764C2408AEF00010546F /* MuMuAtlasEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5C76542408AEF00010546F /* Build configuration list for PBXNativeTarget "MuMuAtlasEditorTests" */;
+			buildPhases = (
+				1F5C76492408AEF00010546F /* Sources */,
+				1F5C764A2408AEF00010546F /* Frameworks */,
+				1F5C764B2408AEF00010546F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F5C76532408AEF00010546F /* PBXTargetDependency */,
+			);
+			name = MuMuAtlasEditorTests;
+			productName = MuMuAtlasEditorTests;
+			productReference = 1F5C764D2408AEF00010546F /* MuMuAtlasEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F5C765B2408AEFB0010546F /* MuMuAtlasEditorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F5C76632408AEFB0010546F /* Build configuration list for PBXNativeTarget "MuMuAtlasEditorUITests" */;
+			buildPhases = (
+				1F5C76582408AEFB0010546F /* Sources */,
+				1F5C76592408AEFB0010546F /* Frameworks */,
+				1F5C765A2408AEFB0010546F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F5C76622408AEFB0010546F /* PBXTargetDependency */,
+			);
+			name = MuMuAtlasEditorUITests;
+			productName = MuMuAtlasEditorUITests;
+			productReference = 1F5C765C2408AEFB0010546F /* MuMuAtlasEditorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1FEB3F542239E0CF00298681 /* MuMuAtlasEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FEB3F722239E0D100298681 /* Build configuration list for PBXNativeTarget "MuMuAtlasEditor" */;
+			buildPhases = (
+				1FEB3F512239E0CF00298681 /* Sources */,
+				1FEB3F522239E0CF00298681 /* Frameworks */,
+				1FEB3F532239E0CF00298681 /* Resources */,
+				1FC8B52B224A22B8005F35FA /* Lint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuMuAtlasEditor;
+			productName = AtlasEditor;
+			productReference = 1FEB3F552239E0CF00298681 /* MuMuAtlasEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FEB3F4D2239E0CF00298681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Nicolás Miari";
+				TargetAttributes = {
+					1F5C764C2408AEF00010546F = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+						TestTargetID = 1FEB3F542239E0CF00298681;
+					};
+					1F5C765B2408AEFB0010546F = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+						TestTargetID = 1FEB3F542239E0CF00298681;
+					};
+					1FEB3F542239E0CF00298681 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 1FEB3F502239E0CF00298681 /* Build configuration list for PBXProject "MuMuAtlasEditor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FEB3F4C2239E0CF00298681;
+			productRefGroup = 1FEB3F562239E0CF00298681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FEB3F542239E0CF00298681 /* MuMuAtlasEditor */,
+				1F5C764C2408AEF00010546F /* MuMuAtlasEditorTests */,
+				1F5C765B2408AEFB0010546F /* MuMuAtlasEditorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F5C764B2408AEF00010546F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5C76852408AFC20010546F /* Test4x4.png in Resources */,
+				1F5C76812408AFC20010546F /* test_01.png in Resources */,
+				1F5C76832408AFC20010546F /* malformed@x.png in Resources */,
+				1F5C767E2408AFC20010546F /* Media.xcassets in Resources */,
+				1F5C76842408AFC20010546F /* test_02@2x.png in Resources */,
+				1F5C76862408AFC20010546F /* not_an_image.txt in Resources */,
+				1F5C76822408AFC20010546F /* test_04.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5C765A2408AEFB0010546F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEB3F532239E0CF00298681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5C76172408AE100010546F /* 05@2x.png in Resources */,
+				1F5C76122408AE100010546F /* 04@2x.png in Resources */,
+				1F5C763C2408AE100010546F /* MainWindow.storyboard in Resources */,
+				1F5C76142408AE100010546F /* 03@2x.png in Resources */,
+				1F5C763E2408AE100010546F /* Canvas.storyboard in Resources */,
+				1F5C763A2408AE100010546F /* LibraryCollectionViewItem.xib in Resources */,
+				1F5C76322408AE100010546F /* AnchorPointEditor.storyboard in Resources */,
+				1F5C76132408AE100010546F /* 01@2x.png in Resources */,
+				1F5C76112408AE100010546F /* 07@2x.png in Resources */,
+				1F5C76102408AE100010546F /* 06@2x.png in Resources */,
+				1F5C76302408AE100010546F /* ResizeCanvas.storyboard in Resources */,
+				1F5C760F2408AE100010546F /* 02@2x.png in Resources */,
+				1F5C762A2408AE100010546F /* Preferences.storyboard in Resources */,
+				1F5C76382408AE100010546F /* SourceInfo.storyboard in Resources */,
+				1F5C761E2408AE100010546F /* Main.storyboard in Resources */,
+				1F5C76262408AE100010546F /* TestDataOptions.storyboard in Resources */,
+				1F5C76252408AE100010546F /* MainMenu.storyboard in Resources */,
+				1F5C76282408AE100010546F /* Export.storyboard in Resources */,
+				1F5C76152408AE100010546F /* 08@2x.png in Resources */,
+				1F5C760E2408AE100010546F /* 00@2x.png in Resources */,
+				1F5C760D2408AE100010546F /* Document.icns in Resources */,
+				1F5C76182408AE100010546F /* Assets.xcassets in Resources */,
+				1F5C76162408AE100010546F /* 09@2x.png in Resources */,
+				1F5C76352408AE100010546F /* AssetLibrary.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FC8B52B224A22B8005F35FA /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint lint --config \".swiftlint.yml\"\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F5C76492408AEF00010546F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5C768B2408AFC20010546F /* TestDataGeneratorTests.swift in Sources */,
+				1F5C767D2408AFC20010546F /* RendererTests.swift in Sources */,
+				1F5C76802408AFC20010546F /* ScaleFactorTests.swift in Sources */,
+				1F5C766A2408AF930010546F /* ExportingTests.swift in Sources */,
+				1F5C76882408AFC20010546F /* NSErrorTests.swift in Sources */,
+				1F5C768A2408AFC20010546F /* SourceTests.swift in Sources */,
+				1F5C76892408AFC20010546F /* SpriteTests.swift in Sources */,
+				1F5C766B2408AF930010546F /* CGGeometryTests.swift in Sources */,
+				1F5C767F2408AFC20010546F /* PackingTests.swift in Sources */,
+				1F5C76872408AFC20010546F /* ProjectDescriptorTests.swift in Sources */,
+				1F5C766C2408AF930010546F /* CGColorSpaceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F5C76582408AEFB0010546F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5C768F2408B0290010546F /* GenerateTestImageDataTests.swift in Sources */,
+				1F5C768E2408B0290010546F /* MuMuAtlasEditorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FEB3F512239E0CF00298681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5C76372408AE100010546F /* SourceInfoWindowController.swift in Sources */,
+				1F5C762D2408AE100010546F /* LinkedTextField.swift in Sources */,
+				1F5C76242408AE100010546F /* CGFloat+Extensions.swift in Sources */,
+				1F5C76232408AE100010546F /* CGColorSpace+Extensions.swift in Sources */,
+				1F5C76402408AE100010546F /* AppDelegate.swift in Sources */,
+				1F5C763F2408AE100010546F /* CanvasViewController.swift in Sources */,
+				1F5C76362408AE100010546F /* SourceInfoViewController.swift in Sources */,
+				1F5C761C2408AE100010546F /* ProjectDescriptor.swift in Sources */,
+				1F5C76312408AE100010546F /* ResizeCanvasViewController.swift in Sources */,
+				1F5C762C2408AE100010546F /* CenteredClipView.swift in Sources */,
+				1F5C762F2408AE100010546F /* ContextMenuCollectionView.swift in Sources */,
+				1F5C76422408AE100010546F /* FileSystemAccess.swift in Sources */,
+				1F5C76452408AE100010546F /* TestDataExporting.swift in Sources */,
+				1F5C762E2408AE100010546F /* CollectionViewLeftFlowLayout.swift in Sources */,
+				1F5C76342408AE100010546F /* MainWindowController.swift in Sources */,
+				1F5C76272408AE100010546F /* TestDataOptionsViewController.swift in Sources */,
+				1F5C761A2408AE100010546F /* Mesh.swift in Sources */,
+				1F5C76222408AE100010546F /* CGImage+Extensions.swift in Sources */,
+				1F5C76292408AE100010546F /* ExportViewController.swift in Sources */,
+				1F5C761B2408AE100010546F /* Sprite.swift in Sources */,
+				1F5C76442408AE100010546F /* AppConfiguration.swift in Sources */,
+				1F5C762B2408AE100010546F /* Preferences.swift in Sources */,
+				1F5C76432408AE100010546F /* Rendering.swift in Sources */,
+				1F5C76192408AE100010546F /* Source.swift in Sources */,
+				1F5C76472408AE100010546F /* Exporting.swift in Sources */,
+				1F5C76462408AE100010546F /* Packing.swift in Sources */,
+				1F5C763D2408AE100010546F /* MainSplitViewController.swift in Sources */,
+				1F5C76332408AE100010546F /* AnchorPointEditorViewController.swift in Sources */,
+				1F5C761F2408AE100010546F /* Notification+Extensions.swift in Sources */,
+				1F5C76202408AE100010546F /* NSError+Extensions.swift in Sources */,
+				1F5C76392408AE100010546F /* LibraryCollectionViewItem.swift in Sources */,
+				1F5C763B2408AE100010546F /* AssetLibraryViewController.swift in Sources */,
+				1F5C761D2408AE100010546F /* Document.swift in Sources */,
+				1F5C76212408AE100010546F /* CGGeometry+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F5C76532408AEF00010546F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FEB3F542239E0CF00298681 /* MuMuAtlasEditor */;
+			targetProxy = 1F5C76522408AEF00010546F /* PBXContainerItemProxy */;
+		};
+		1F5C76622408AEFB0010546F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FEB3F542239E0CF00298681 /* MuMuAtlasEditor */;
+			targetProxy = 1F5C76612408AEFB0010546F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F5C75D12408AE100010546F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F5C75D22408AE100010546F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F5C75DC2408AE100010546F /* MainMenu.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F5C75DD2408AE100010546F /* Base */,
+			);
+			name = MainMenu.storyboard;
+			sourceTree = "<group>";
+		};
+		1F5C75FE2408AE100010546F /* MainWindow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F5C75FF2408AE100010546F /* Base */,
+			);
+			name = MainWindow.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F5C76552408AEF00010546F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				INFOPLIST_FILE = MuMuAtlasEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.MuMuAtlasEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuMuAtlasEditor.app/Contents/MacOS/MuMuAtlasEditor";
+			};
+			name = Debug;
+		};
+		1F5C76562408AEF00010546F /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				INFOPLIST_FILE = MuMuAtlasEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.MuMuAtlasEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuMuAtlasEditor.app/Contents/MacOS/MuMuAtlasEditor";
+			};
+			name = Test;
+		};
+		1F5C76572408AEF00010546F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				INFOPLIST_FILE = MuMuAtlasEditorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.MuMuAtlasEditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuMuAtlasEditor.app/Contents/MacOS/MuMuAtlasEditor";
+			};
+			name = Release;
+		};
+		1F5C76642408AEFB0010546F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				INFOPLIST_FILE = MuMuAtlasEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.MuMuAtlasEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MuMuAtlasEditor;
+			};
+			name = Debug;
+		};
+		1F5C76652408AEFB0010546F /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				INFOPLIST_FILE = MuMuAtlasEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.MuMuAtlasEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MuMuAtlasEditor;
+			};
+			name = Test;
+		};
+		1F5C76662408AEFB0010546F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				INFOPLIST_FILE = MuMuAtlasEditorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.MuMuAtlasEditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MuMuAtlasEditor;
+			};
+			name = Release;
+		};
+		1FD29C1422422BB1004B2624 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Test;
+		};
+		1FD29C1522422BB1004B2624 /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MuMuAtlasEditor/MuMuAtlasEditor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MuMuAtlasEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.MuMuAtlasEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Test;
+		};
+		1FEB3F702239E0D100298681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FEB3F712239E0D100298681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1FEB3F732239E0D100298681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MuMuAtlasEditor/MuMuAtlasEditor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MuMuAtlasEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.MuMuAtlasEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		1FEB3F742239E0D100298681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MuMuAtlasEditor/MuMuAtlasEditor.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.0.1;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MuMuAtlasEditor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.MuMuAtlasEditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F5C76542408AEF00010546F /* Build configuration list for PBXNativeTarget "MuMuAtlasEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5C76552408AEF00010546F /* Debug */,
+				1F5C76562408AEF00010546F /* Test */,
+				1F5C76572408AEF00010546F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F5C76632408AEFB0010546F /* Build configuration list for PBXNativeTarget "MuMuAtlasEditorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F5C76642408AEFB0010546F /* Debug */,
+				1F5C76652408AEFB0010546F /* Test */,
+				1F5C76662408AEFB0010546F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FEB3F502239E0CF00298681 /* Build configuration list for PBXProject "MuMuAtlasEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEB3F702239E0D100298681 /* Debug */,
+				1FD29C1422422BB1004B2624 /* Test */,
+				1FEB3F712239E0D100298681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FEB3F722239E0D100298681 /* Build configuration list for PBXNativeTarget "MuMuAtlasEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEB3F732239E0D100298681 /* Debug */,
+				1FD29C1522422BB1004B2624 /* Test */,
+				1FEB3F742239E0D100298681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FEB3F4D2239E0CF00298681 /* Project object */;
+}

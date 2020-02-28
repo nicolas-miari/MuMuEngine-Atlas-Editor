@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="MCU-3i-Nhi">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="vvU-Nz-QEq">
+            <objects>
+                <windowController id="MCU-3i-Nhi" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="R4Y-fv-UmC">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="461" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <connections>
+                            <outlet property="delegate" destination="MCU-3i-Nhi" id="Fj9-Uz-o14"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="yBz-sA-mrd" kind="relationship" relationship="window.shadowedContentViewController" id="dJB-sx-G4q"/>
+                    </connections>
+                </windowController>
+                <customObject id="rDM-1D-bF8" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="-5"/>
+        </scene>
+        <!--Tab View Controller-->
+        <scene sceneID="gD7-oq-uaf">
+            <objects>
+                <tabViewController selectedTabViewItemIndex="0" id="yBz-sA-mrd" sceneMemberID="viewController">
+                    <textField key="view" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="1X8-CK-MpI">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="bqb-gv-eUP">
+                            <font key="font" usesAppearanceFont="YES"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <tabViewItems>
+                        <tabViewItem identifier="" id="dzP-IE-cxS"/>
+                        <tabViewItem identifier="" id="ygF-0u-c3U"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="ndu-vR-qdT">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="yBz-sA-mrd" id="kRb-7L-sCq"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="ndu-vR-qdT" id="5Ch-ea-Sr5"/>
+                        <segue destination="v7a-1U-fvW" kind="relationship" relationship="tabItems" id="8fN-Rm-BDX"/>
+                        <segue destination="I2H-MN-cYk" kind="relationship" relationship="tabItems" id="2NQ-TF-EiK"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="iNm-sG-kMv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="457"/>
+        </scene>
+        <!--Global-->
+        <scene sceneID="gEr-3Z-eHs">
+            <objects>
+                <viewController title="Global" id="v7a-1U-fvW" sceneMemberID="viewController">
+                    <view key="view" id="U39-3G-h7B">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kB3-q9-jUY">
+                                <rect key="frame" x="18" y="199" width="307" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Remove file extension when importing sources." bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="qUX-Rv-lMK">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p5Z-3D-vdf">
+                                <rect key="frame" x="18" y="263" width="291" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Global preferences are applied to new projects." id="N50-qW-viq">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l7v-VT-9cx">
+                                <rect key="frame" x="30" y="141" width="374" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Remove source file extension from exported sprite names." bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="uy2-SX-zkf">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NGJ-tB-x1j">
+                                <rect key="frame" x="349" y="13" width="82" height="32"/>
+                                <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xmv-q3-53m">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JyW-vm-12P">
+                                <rect key="frame" x="267" y="13" width="82" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="cun-fP-j65"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uBb-4H-fdn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nuK-J3-DG2">
+                                <rect key="frame" x="30" y="176" width="334" height="14"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="&quot;MySprite.png&quot; is imported as a library item named &quot;MySprite&quot;." id="wvn-Oh-2cA">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3xy-9h-I0W">
+                                <rect key="frame" x="42" y="121" width="365" height="14"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="&quot;MySprite.png&quot; is exported as a sprite in the atlas named &quot;MySprite&quot;." id="RC7-Ec-jaa">
+                                    <font key="font" metaFont="smallSystem"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NGJ-tB-x1j" firstAttribute="leading" secondItem="JyW-vm-12P" secondAttribute="trailing" constant="12" symbolic="YES" id="6VL-9V-H74"/>
+                            <constraint firstItem="JyW-vm-12P" firstAttribute="centerY" secondItem="NGJ-tB-x1j" secondAttribute="centerY" id="6kq-h5-3iJ"/>
+                            <constraint firstItem="NGJ-tB-x1j" firstAttribute="width" secondItem="JyW-vm-12P" secondAttribute="width" id="Fzu-Vw-9Hs"/>
+                            <constraint firstAttribute="trailing" secondItem="NGJ-tB-x1j" secondAttribute="trailing" constant="25" id="Lv5-lN-OqL"/>
+                            <constraint firstAttribute="bottom" secondItem="NGJ-tB-x1j" secondAttribute="bottom" constant="20" id="Mxu-MK-beE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="itc-Lp-QNC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="281"/>
+        </scene>
+        <!--Project-->
+        <scene sceneID="ZrG-h2-AJH">
+            <objects>
+                <viewController title="Project" id="I2H-MN-cYk" sceneMemberID="viewController">
+                    <view key="view" id="Qqr-u1-SL4">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gk2-rE-1Wr">
+                                <rect key="frame" x="18" y="263" width="349" height="17"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Project preferences are applied to the current document." id="RIh-x7-LtS">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="ev5-BI-ECq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="648"/>
+        </scene>
+    </scenes>
+</document>

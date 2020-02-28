@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="BHF-3F-dfE">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="ar6-QO-J23">
+            <objects>
+                <windowController id="BHF-3F-dfE" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="WVm-7C-ltV">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="461" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <connections>
+                            <outlet property="delegate" destination="BHF-3F-dfE" id="DA7-Ai-osY"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="sv2-zB-R32" kind="relationship" relationship="window.shadowedContentViewController" id="Zo6-OC-XM1"/>
+                    </connections>
+                </windowController>
+                <customObject id="xkp-JE-LXg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-224" y="149"/>
+        </scene>
+        <!--Anchor Point Editor View Controller-->
+        <scene sceneID="zOF-Yp-dzg">
+            <objects>
+                <viewController id="sv2-zB-R32" customClass="AnchorPointEditorViewController" customModule="AtlasEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="MCN-Lh-uL7">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="397"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjc-vD-MIr">
+                                <rect key="frame" x="0.0" y="61" width="480" height="336"/>
+                                <clipView key="contentView" id="QHj-IB-z0H">
+                                    <rect key="frame" x="1" y="1" width="478" height="334"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XqT-ap-UdL">
+                                            <rect key="frame" x="0.0" y="0.0" width="463" height="319"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="Fvw-Le-hAc">
+                                    <rect key="frame" x="1" y="319" width="478" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Qcb-JQ-sMn">
+                                    <rect key="frame" x="463" y="1" width="16" height="334"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9em-0G-UF6">
+                                <rect key="frame" x="258" y="13" width="104" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="1Tr-2Z-1fD"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fdn-mg-moh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancel:" target="sv2-zB-R32" id="SCP-oa-iKq"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="A5H-Nx-BuO">
+                                <rect key="frame" x="362" y="13" width="104" height="32"/>
+                                <buttonCell key="cell" type="push" title="Set" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8fv-l4-a4C">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="set:" target="sv2-zB-R32" id="Q7G-uj-jxc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="A5H-Nx-BuO" firstAttribute="width" secondItem="9em-0G-UF6" secondAttribute="width" id="4sa-OI-LyK"/>
+                            <constraint firstAttribute="trailing" secondItem="A5H-Nx-BuO" secondAttribute="trailing" constant="20" id="DK1-6L-MKi"/>
+                            <constraint firstItem="9em-0G-UF6" firstAttribute="centerY" secondItem="A5H-Nx-BuO" secondAttribute="centerY" id="FTa-XA-xjz"/>
+                            <constraint firstAttribute="trailing" secondItem="bjc-vD-MIr" secondAttribute="trailing" id="Fx7-gm-kdk"/>
+                            <constraint firstItem="A5H-Nx-BuO" firstAttribute="leading" secondItem="9em-0G-UF6" secondAttribute="trailing" constant="12" symbolic="YES" id="WYT-A8-UcH"/>
+                            <constraint firstAttribute="bottom" secondItem="A5H-Nx-BuO" secondAttribute="bottom" constant="20" id="dBj-K0-Ntg"/>
+                            <constraint firstItem="A5H-Nx-BuO" firstAttribute="top" secondItem="bjc-vD-MIr" secondAttribute="bottom" constant="20" id="kNF-e5-LZt"/>
+                            <constraint firstItem="bjc-vD-MIr" firstAttribute="leading" secondItem="MCN-Lh-uL7" secondAttribute="leading" id="vH6-aq-xq1"/>
+                            <constraint firstItem="bjc-vD-MIr" firstAttribute="top" secondItem="MCN-Lh-uL7" secondAttribute="top" id="wTM-KP-axD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="bjc-vD-MIr" id="Nbe-mb-D80"/>
+                    </connections>
+                </viewController>
+                <customObject id="eVg-wm-3Ow" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379" y="144"/>
+        </scene>
+    </scenes>
+</document>

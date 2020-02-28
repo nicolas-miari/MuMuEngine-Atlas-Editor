@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" customClass="MainWindowController" customModule="AtlasEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="Ckk-yw-fiv">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="47FB3FDA-E206-41F9-88DC-7523AFCB2CAB" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="NW4-PM-udX">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="9pr-WP-9D1"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="S3c-iD-XeT"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="m84-FW-NOU"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="fV5-hd-8w8"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="CGZ-DZ-Mav"/>
+                                <toolbarItem implicitItemIdentifier="A9143D26-6977-4F82-A96A-9307D4FBCD4D" label="" paletteLabel="" toolTip="Hide or show the Asset Library" id="byZ-je-qjL">
+                                    <size key="minSize" width="36" height="23"/>
+                                    <size key="maxSize" width="55" height="27"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" id="c7A-Qm-PnO">
+                                        <rect key="frame" x="0.0" y="14" width="38" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="selectAny" id="hIQ-I3-7jn">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment image="BtnRightPaneTemplate" imageScaling="none" width="32"/>
+                                            </segments>
+                                        </segmentedCell>
+                                    </segmentedControl>
+                                    <connections>
+                                        <action selector="paneSegmentedControlChanged:" target="jGA-0Y-lOj" id="Hej-pb-30c"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="D2FD6B03-ADDF-42CA-97DE-3BDCCC8E7FDA" label="" paletteLabel="" toolTip="Export texture atlas" image="NSShareTemplate" sizingBehavior="auto" id="P8h-xJ-ANm">
+                                    <button key="view" verticalHuggingPriority="750" id="yRD-6e-uD5">
+                                        <rect key="frame" x="0.0" y="14" width="82" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSShareTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Hzf-7e-dOm">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <connections>
+                                        <action selector="export:" target="6f7-a7-6o1" id="wSF-IT-yIK"/>
+                                    </connections>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="P8h-xJ-ANm"/>
+                                <toolbarItem reference="CGZ-DZ-Mav"/>
+                                <toolbarItem reference="byZ-je-qjL"/>
+                            </defaultToolbarItems>
+                        </toolbar>
+                        <connections>
+                            <outlet property="delegate" destination="jGA-0Y-lOj" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <outlet property="splitViewSegmentedControl" destination="c7A-Qm-PnO" id="kOf-UO-Jq4"/>
+                        <segue destination="zRd-uH-fYF" kind="relationship" relationship="window.shadowedContentViewController" id="tgv-Yc-FCP"/>
+                    </connections>
+                </windowController>
+                <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="250"/>
+        </scene>
+        <!--Main Split View Controller-->
+        <scene sceneID="E7z-Qy-t2K">
+            <objects>
+                <splitViewController id="zRd-uH-fYF" customClass="MainSplitViewController" customModule="AtlasEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="i7m-Sb-hTl"/>
+                        <splitViewItem canCollapse="YES" id="dAP-pL-cJ1"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="4NW-Rh-8gJ">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="zRd-uH-fYF" id="7wf-fZ-8rD"/>
+                        </connections>
+                    </splitView>
+                    <connections>
+                        <outlet property="splitView" destination="4NW-Rh-8gJ" id="das-m3-11o"/>
+                        <segue destination="TM2-Ya-2Hn" kind="relationship" relationship="splitItems" id="aHv-er-fxh"/>
+                        <segue destination="frh-Ho-kOC" kind="relationship" relationship="splitItems" id="Ntm-Iq-nMf"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="ciW-j9-LbE" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="721"/>
+        </scene>
+        <!--Canvas-->
+        <scene sceneID="Qp5-eu-yGB">
+            <objects>
+                <controllerPlaceholder storyboardName="Canvas" id="TM2-Ya-2Hn" sceneMemberID="viewController"/>
+                <customObject id="9Du-1S-ufc" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="1053"/>
+        </scene>
+        <!--AssetLibrary-->
+        <scene sceneID="Zaj-10-esJ">
+            <objects>
+                <controllerPlaceholder storyboardName="AssetLibrary" id="frh-Ho-kOC" sceneMemberID="viewController"/>
+                <customObject id="btT-r9-qUm" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260" y="1053"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BtnRightPaneTemplate" width="18" height="14"/>
+        <image name="NSShareTemplate" width="11" height="16"/>
+    </resources>
+</document>
